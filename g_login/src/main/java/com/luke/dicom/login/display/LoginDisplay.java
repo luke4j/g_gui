@@ -86,7 +86,7 @@ public class LoginDisplay {
 
         //。。。事件                      //6.注册事件
         //窗体是否关闭
-        while(!shell.isDisposed()){
+        while(!display.isDisposed()){  //这里判断线程是否关闭，因为shell在登录之后会关闭
             //display线程状态是否工作
             if(!display.readAndDispatch()){
                 //display线程休眠
