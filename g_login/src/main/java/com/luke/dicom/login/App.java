@@ -1,6 +1,6 @@
 package com.luke.dicom.login;
 
-import com.luke.dicom.login.display.LoginDispaly;
+import com.luke.dicom.login.display.LoginDisplay;
 import org.apache.log4j.PropertyConfigurator;
 
 import java.io.File;
@@ -13,6 +13,9 @@ public class App {
         Properties properties = new Properties() ;
         properties.load(new FileInputStream(file));
         PropertyConfigurator.configure(properties);
-        new LoginDispaly() ;
+
+
+
+        new LoginDisplay() ;
     }
 }
